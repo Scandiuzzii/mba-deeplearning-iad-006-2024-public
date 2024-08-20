@@ -4,7 +4,7 @@ import pickle
 
 app = Flask(__name__)
 
-with open('modelo.pkl', 'rb') as file:
+with open('model/modelo.pkl', 'rb') as file:
     modelo = pickle.load(file)
 
 @app.route('/predict', methods=['POST'])
